@@ -1,0 +1,18 @@
+@mixin format-botons{
+    font-weight: 400;
+    background-color: $colorBtnH4;
+    color: $colorDiferentTwo;
+    border-radius: 7px;
+    font-size: $btnFs;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    border: 1.5px solid $colorDiferentTwo;
+}
+
+@mixin hover-botons{
+    background-color: $colorBtnH4;
+    border-color: $colorDiferentOne;
+    color: $colorDiferentTwo;
+    box-shadow: 8px 3px 8px rgba(0, 0, 0, 25%) ;
+    transform: translate(-1%);
+}

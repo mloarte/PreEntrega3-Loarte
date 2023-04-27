@@ -1,0 +1,115 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 620px;
+}
+
+.iniciar{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+
+
+.side-image{
+    background-image: url(../img/Academia4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.signin{
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        justify-content: center;
+        font-weight: 500;
+        color: #D6B68C;
+        transition: .5s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+    .title{
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 10px 0 10px;
+        label{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            pointer-events: none;
+            transition: .5s;
+            color: #D6B68C;
+        }
+        .input{
+            height: 45px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            outline: none;
+            margin-bottom: 20px;
+            color: #8F6640;
+            &:valid ~ label{
+                top: -10px;
+                font-size: 13px;
+                color: #8F6640;
+            }
+        }
+    }
+}
+
+.button-inic{
+    width: auto;
+    height: 45px;
+}
+
+@media only screen and (max-width:768px){
+    .iniciar{
+        width: 350px;
+    }
+    
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    .img_iniciar{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+}
+

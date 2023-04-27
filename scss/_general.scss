@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap'); /* h1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap'); /* h2*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap'); /* h4 */
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap'); /* Nav */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /* p */
+
+.conFondo{
+    min-height: 100vh;
+    background-image: url(../img/Fondo\ del\ main\ para\ página.png);
+    background-repeat: no-repeat center center center fixed;
+    background-size: cover;
+}
+
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    color: grey;
+    font-size: $h1Fs;
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    margin: 40px 0;
+    &::before{
+        content:'';
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: $colorDiferentTwo;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: animate 4s linear infinite;
+    }
+}
+
+
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+
+h2{
+    font-family: 'Manrope', sans-serif;
+    color: $colorDiferentOne;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: $h3Fs;
+    color: #966B44;}
+
+h4{
+    font-family: 'Alkatra', cursive;
+    font-size: $h4Fs;
+    color: $colorBtnH4;
+}
+
+p{
+    color: $colorParrafo;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+    width: auto;
+    height: $heightLog;
+}
+
+
+
+.btn{
+    @include format-botons;
+    &:hover{
+        @include hover-botons;
+    }
+}
+
