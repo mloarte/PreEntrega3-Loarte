@@ -8,6 +8,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /* p */
 
+main{
+    min-height: calc(100vh - 211px - 58px);
+}
+
 .conFondo{
     min-height: 100vh;
     background-image: url(../img/Fondo\ del\ main\ para\ página.png);
